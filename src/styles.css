@@ -1,0 +1,57 @@
+/* Import TailwindCSS utilities */
+@import "tailwindcss";
+
+/* Make the html, body, and root div take full screen and remove default spacing */
+body,
+html,
+#root {
+  width: 100%;      /* full width */
+  height: 100%;     /* full height */
+  margin: 0;        /* remove default browser margin */
+  padding: 0;       /* remove default browser padding */
+  overflow: hidden; /* prevent scrollbars */
+}
+
+/* Apply a slight color filter to the root */
+#root {
+  filter: saturate(1.15)   /* increase color saturation by 15% */
+         hue-rotate(345deg); /* rotate the hue slightly for a warmer tone */
+}
+
+/* Make all children of root use flexbox and center their content */
+#root * {
+  display: flex;
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
+}
+
+/* Fade-in animation keyframes */
+@keyframes fade-in {
+  from { opacity: 0; }  /* start transparent */
+  to { opacity: 1; }    /* end fully visible */
+}
+
+/* Load a custom font called LazyDog */
+@font-face {
+  font-family: "LazyDog";
+  src: url("/fonts/lazy_dog.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Optional utility class to apply LazyDog font */
+.font-lazydog {
+  font-family: "LazyDog", sans-serif;
+}
+
+/* Canvas styling for your R3F scene */
+canvas {
+  opacity: 0;                 /* start invisible */
+  touch-action: none;         /* prevent default touch gestures on mobile */
+  animation: fade-in 1s ease 0.3s forwards; /* fade-in effect over 1s, start after 0.3s */
+}
+
+/* Cursor style when interacting with canvas */
+canvas:active {
+  cursor: grabbing;           /* shows grabbing hand when dragging the canvas */
+}
