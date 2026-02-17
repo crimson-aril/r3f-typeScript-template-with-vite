@@ -24,7 +24,7 @@ This project serves as a starter template for building 3D web applications using
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/crimson-aril/template-of-r3f-typeScript-with-vite.git
+   git clone https://github.com/crimson-aril/r3f-typeScript-template-with-vite.git
    ```
 
 2. Navigate to the project directory:
