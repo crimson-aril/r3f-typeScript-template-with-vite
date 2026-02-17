@@ -1,5 +1,9 @@
 # Template of R3F + TypeScript with Vite
 
+
+![Homepage Demo](src/assets/demo.gif)
+
+
 ## Overview
 
 This project serves as a starter template for building 3D web applications using React Three Fiber (R3F) with Vite and TypeScript. It aims to facilitate the creation of 3D scenes in a web environment, leveraging the power of React, Three.js, and TypeScript, all optimized for development with Vite.
