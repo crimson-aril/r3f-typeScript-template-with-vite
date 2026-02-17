@@ -33,7 +33,7 @@ export default function CityEnvironment() {
 
       {/* Environment component applies HDR lighting and reflections */}
       {/* 'files' points to an HDR texture for realistic reflections */}
-      <Environment files="/textures/potsdamer_platz_1k.hdr" />
+      <Environment files="textures/potsdamer_platz_1k.hdr" />
 
       {/* Ground plane */}
       {/* A simple flat plane that receives shadows */}
